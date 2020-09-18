@@ -1,5 +1,5 @@
-#ifndef FUNCTIONS_H
-#define FUNCTIONS_H
+#ifndef MANAGEMENT_H
+#define MANAGEMENT_H
 
 #include <stdio.h> 
 #include <stdlib.h>
