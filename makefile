@@ -1,47 +1,26 @@
+SRC =main.c\
+src/management.c.\
 
-PROJECT_NAME = Library management
 
+INC = -Iunity\
+-Iinc\
+-Itest
 
+PROJECT_NAME = PRIMENUMBER.out
+
+# Output directory
 BUILD = build
 
-SRC = main.c\
-src/management.c\
-
-
-#TEST_SRC = src/management.c\
-#test/unit-test.c
-
-#TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
-
-# All include folders with header files
-INC	= -Iinc
-
-PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME).out
-
-
-$(PROJECT_NAME):Final-assignment1.out
-
-
-.PHONY: run clean test  doc all
+$(PROJECT_NAME): $(SRC)
+	gcc $(SRC) $(INC) -o $(PROJECT_NAME)
 
 all: $(SRC) $(BUILD)
-	gcc $(SRC) $(INC) -o $(PROJECT_OUTPUT).out
-
+	gcc $(SRC) $(INC) -o $(PROJECT_NAME)
 
 run:$(PROJECT_NAME)
-	./$(PROJECT_OUTPUT).out
-
-
-
-
-#test:$(BUILD)
-	#gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) -lcunit
-	#./$(TEST_OUTPUT)
-
+	./${PROJECT_NAME}
 
 clean:
-	rm -rf $(BUILD) $(DOCUMENTATION_OUTPUT)
-
-
+	rm -rf $(PROJECT_NAME)
 $(BUILD):
 	mkdir build
