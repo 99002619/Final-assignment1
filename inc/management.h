@@ -1,5 +1,5 @@
-#ifndef MANAGEMENT_H
-#define MANAGEMENT_H
+#ifndef __MANAGEMENT_H
+#define __MANAGEMENT_H
 
 #include <stdio.h> 
 #include <stdlib.h>
