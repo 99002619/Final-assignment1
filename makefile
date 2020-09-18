@@ -6,7 +6,7 @@ INC = -Iunity\
 -Iinc\
 -Itest
 
-PROJECT_NAME = Library management.out
+PROJECT_NAME = Library management
 
 # Output directory
 BUILD = build
