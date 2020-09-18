@@ -1,12 +1,12 @@
-SRC =main.c\
-src/management.c.\
+SRC = main.c\
+src/management.c\
 
 
 INC = -Iunity\
 -Iinc\
 -Itest
 
-PROJECT_NAME = PRIMENUMBER.out
+PROJECT_NAME = Library management.out
 
 # Output directory
 BUILD = build
