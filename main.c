@@ -1,4 +1,4 @@
-#include "functions.c"
+#include "management.c"
 
 int main()
 {
