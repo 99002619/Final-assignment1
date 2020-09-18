@@ -35,8 +35,8 @@ run:$(PROJECT_NAME)
 
 
 #test:$(BUILD)
-	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) -lcunit
-	./$(TEST_OUTPUT)
+	#gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) -lcunit
+	#./$(TEST_OUTPUT)
 
 `
 clean:
