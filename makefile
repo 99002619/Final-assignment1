@@ -38,7 +38,7 @@ run:$(PROJECT_NAME)
 	#gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) -lcunit
 	#./$(TEST_OUTPUT)
 
-`
+
 clean:
 	rm -rf $(BUILD) $(DOCUMENTATION_OUTPUT)
 
