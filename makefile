@@ -5,7 +5,7 @@ PROJECT_NAME = Library management
 BUILD = build
 
 # All source code files
-SRC = management.c\
+SRC = main.c\
 src/management.c\
 
 # All test source files
