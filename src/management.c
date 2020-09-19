@@ -70,7 +70,7 @@ char getAnswer(int token)
 		printf("Deseja consultar novamente?");		
 	}
 	
-	#printf(" (s/n) -> ");
+	printf(" (s/n) -> ");
 
 	char answer;
 	scanf("%c", &answer);
