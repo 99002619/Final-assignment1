@@ -37,20 +37,20 @@ int getCommand(int token)
 		
 		while(command != 1 && command != 2 && command != 3 && command != 4)
 		{
-			printf("Comando invalido! Digite novamente -> ");
+			#printf("Comando invalido! Digite novamente -> ");
 			scanf("%d", &command);
 			getchar();
 		}
 	}
 	else if (token == 2)
 	{	
-		printf("Digite o comando desejado -> ");
+		#printf("Digite o comando desejado -> ");
 		scanf("%d", &command);
 		getchar();
 	
 		while(command != 1 && command != 2 && command != 3 && command && command !=  4 && command != 5)
 		{
-			printf("Comando invalido! Digite novamente -> ");
+			#printf("Comando invalido! Digite novamente -> ");
 			scanf("%d", &command);
 			getchar();
 		}
@@ -63,14 +63,14 @@ char getAnswer(int token)
 {
 	if (token == 0)
 	{
-		printf("Livro adicionado com sucesso! Deseja adicionar outro?");
+		#printf("Livro adicionado com sucesso! Deseja adicionar outro?");
 	}
 	else if (token == 1)
 	{
-		printf("Deseja consultar novamente?");		
+		#printf("Deseja consultar novamente?");		
 	}
 	
-	printf(" (s/n) -> ");
+	#printf(" (s/n) -> ");
 
 	char answer;
 	scanf("%c", &answer);
@@ -184,18 +184,18 @@ void addBook()
 	char category[20];
 	struct tm *today;
 
-	printf("Digite o nome do livro: ");
+	printf("Enter the name of book: ");
 	fgets(book_title,50,stdin);
-	printf("Digite o nome do autor: ");
+	printf("Enter the name of author: ");
 	fgets(author_name,50,stdin);
-	printf("Digite o nome da editora: ");
+	printf("Enter the name of editor: ");
 	fgets(publisher,25,stdin);
-	printf("Digite o número de ISBN: ");
+	printf("Enter the number of ISBN: ");
 	
 	scanf("%d", &isbn);
 	getchar();
 	
-	printf("Escolha a categoria\n");
+	printf("Select a category\n");
 	setCategory(category);
 	
 	*today = getTime();
@@ -238,12 +238,12 @@ void showAllBooks()
 		fgets(category,20,f);
 		fgets(date,15,f);
 
-		printf("Título: %s", book_title);
-		printf("Autor: %s", author_name);
-		printf("Editora: %s",publisher);
+		printf("Title: %s", book_title);
+		printf("Author: %s", author_name);
+		printf("Editor: %s",publisher);
 		printf("ISBN: %s", isbn);
-		printf("Categoria: %s", category);
-		printf("Dia do cadastro: %s\n", date);
+		printf("Category: %s", category);
+		printf("Date of register: %s\n", date);
 	}
 
 	fclose(f);
@@ -340,7 +340,7 @@ void showMenu()
 { 
 	system("clear");
 
-	printf("Sistema de Livraria\n\n");
+	printf("System bookstore\n\n");
 	printf("1 - Adicionar Livro\n");
 	printf("2 - Checar Livro\n");
 	printf("3 - Apagar dados\n");
@@ -372,11 +372,11 @@ void showCheckMenu()
 {
 	system("clear");
 	printf("Deseja consultar por...\n");
-	printf("1 - Título\n");
-	printf("2 - Autor\n");
-	printf("3 - Editora\n");
-	printf("4 - Categoria\n");
-	printf("5 - Todos os livros\n");
+	printf("1 - Title\n");
+	printf("2 - Author\n");
+	printf("3 - Editor\n");
+	printf("4 - Category\n");
+	printf("5 - all legal books\n");
 
 	int command = getCommand(2);
 	checkContent(command);
