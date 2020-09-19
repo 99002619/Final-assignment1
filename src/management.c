@@ -380,3 +380,4 @@ void showCheckMenu()
 
 	int command = getCommand(2);
 	checkContent(command);
+}
