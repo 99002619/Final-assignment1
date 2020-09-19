@@ -37,20 +37,20 @@ int getCommand(int token)
 		
 		while(command != 1 && command != 2 && command != 3 && command != 4)
 		{
-			#printf("Comando invalido! Digite novamente -> ");
+			printf("Comando invalido! Digite novamente -> ");
 			scanf("%d", &command);
 			getchar();
 		}
 	}
 	else if (token == 2)
 	{	
-		#printf("Digite o comando desejado -> ");
+		printf("Digite o comando desejado -> ");
 		scanf("%d", &command);
 		getchar();
 	
 		while(command != 1 && command != 2 && command != 3 && command && command !=  4 && command != 5)
 		{
-			#printf("Comando invalido! Digite novamente -> ");
+			printf("Comando invalido! Digite novamente -> ");
 			scanf("%d", &command);
 			getchar();
 		}
@@ -63,11 +63,11 @@ char getAnswer(int token)
 {
 	if (token == 0)
 	{
-		#printf("Livro adicionado com sucesso! Deseja adicionar outro?");
+		printf("Livro adicionado com sucesso! Deseja adicionar outro?");
 	}
 	else if (token == 1)
 	{
-		#printf("Deseja consultar novamente?");		
+		printf("Deseja consultar novamente?");		
 	}
 	
 	#printf(" (s/n) -> ");
