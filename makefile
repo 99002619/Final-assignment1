@@ -5,12 +5,12 @@ PROJECT_NAME = Library management
 BUILD = build
 
 # All source code files
-SRC = main.c\
+SRC = management.c\
 src/management.c\
 
 # All test source files
 TEST_SRC = src/management.c\
-test/unit-test.c
+test/unit test.c
 
 TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
 
