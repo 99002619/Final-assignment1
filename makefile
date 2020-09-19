@@ -10,7 +10,7 @@ src/management.c\
 
 # All test source files
 TEST_SRC = src/management.c\
-unit test.c
+unittest.c
 
 
 TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
