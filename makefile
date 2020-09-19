@@ -12,6 +12,7 @@ src/management.c\
 TEST_SRC = src/management.c\
 test/unit test.c
 
+
 TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
 
 # All include folders with header files
@@ -23,7 +24,7 @@ PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME).out
 DOCUMENTATION_OUTPUT = documentation/html
 
 # Default target built
-$(PROJECT_NAME):Library management
+$(PROJECT_NAME):all
 
 # Run the target even if the matching name exists
 .PHONY: run clean test  doc all
