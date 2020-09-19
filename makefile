@@ -1,5 +1,5 @@
 # Name of the project
-PROJECT_NAME = Library management
+PROJECT_NAME = management
 
 # Output directory
 BUILD = build
@@ -10,7 +10,7 @@ src/management.c\
 
 # All test source files
 TEST_SRC = src/management.c\
-test/unit test.c
+unit test.c
 
 
 TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
@@ -20,8 +20,6 @@ INC	= -Iinc
 
 PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME).out
 
-# Document files
-DOCUMENTATION_OUTPUT = documentation/html
 
 # Default target built
 $(PROJECT_NAME):all
@@ -36,9 +34,6 @@ all: $(SRC) $(BUILD)
 run:$(PROJECT_NAME)
 	./$(PROJECT_OUTPUT).out
 
-# Document the code using Doxygen
-doc:
-	make -C ./documentation
 
 # Build and run the unit tests
 test:$(BUILD)
