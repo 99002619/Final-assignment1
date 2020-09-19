@@ -2,8 +2,8 @@
 #include <CUnit/CUnit.h>
 
 /* Modify these two lines according to the project */
-#include <calculator_operations.h>
-#define PROJECT_NAME    "Calculator"
+#include <management.h>
+#define PROJECT_NAME    "management"
 
 /* Prototypes for all the test functions */
 void test_add(void);
